@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape">
+
+    <ImageView
+        android:id="@+id/item_photo"
+        android:layout_width="@dimen/large_icon_size"
+        android:layout_height="@dimen/large_icon_size"
+        android:minWidth="@dimen/large_icon_size"
+        android:minHeight="@dimen/large_icon_size"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/itemBody"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/valueView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_in_list_size"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_in_list_size"
+            android:gravity="right|center" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:src="@drawable/cross"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/icon_padding"/>
+
+</LinearLayout>

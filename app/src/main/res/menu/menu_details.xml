@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ItemDetailsActivity">
+    <item
+        android:id="@+id/action_back"
+        android:title="Back"
+        android:icon="@drawable/back"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete"
+        android:icon="@drawable/delete"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/action_share"
+        android:title="Share"
+        android:icon="@drawable/share"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+</menu>

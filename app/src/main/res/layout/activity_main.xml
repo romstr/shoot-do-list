@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_padding">
+        <ImageButton
+            android:id="@+id/add_photo_button"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/photo"
+            android:scaleType="fitCenter"
+            android:gravity="left"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/cross"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@android:color/transparent"/>
+        <EditText
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/add"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/add_text_button"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/text"
+            android:scaleType="fitCenter"
+            android:gravity="right"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <ListView
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lv.tsi.romstr.todolist" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="lv.tsi.romstr.todolist.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lv.tsi.romstr.todolist.ItemDetailsActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="lv.tsi.romstr.todolist.AppPreferences"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="lv.tsi.romstr.todolist.sharing.TwitterActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="lv.tsi.romstr.todolist.dialog.ImageDialog"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <meta-data android:name="AA_DB_NAME" android:value="ToDo.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="6" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="lv.tsi.romstr.todolist.ToDoItem" />
+
+    </application>
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

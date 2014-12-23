@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:id="@+id/item_details_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/itemBackGround">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--To Do item name!-->
+            <LinearLayout style="@style/item_details_header_layout">
+                <TextView
+                    style="@style/item_details_header"
+                    android:text="@string/to_do"/>
+                <ImageButton
+                    style="@style/item_details_button"
+                    android:id="@+id/item_details_name_image_button"
+                    android:src="@drawable/edit"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_details_name_text_view"
+                style="@style/item_details_field"/>
+            <EditText
+                android:id="@+id/item_details_name_edit_text"
+                style="@style/item_details_field"
+                android:visibility="gone"/>
+            <!--/To Do Item name!-->
+
+            <!--Completion status!-->
+            <LinearLayout style="@style/item_details_header_layout">
+                <TextView
+                    style="@style/item_details_header"
+                    android:text="@string/completion_status"/>
+                <ImageButton
+                    style="@style/item_details_button"
+                    android:id="@+id/item_details_completion_image_button"
+                    android:src="@drawable/check"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/item_details_field"
+                android:id="@+id/item_details_completion_text_view"
+                android:text="@string/completion_none"/>
+            <!--/Completion status!-->
+
+            <!--Deadline!-->
+            <LinearLayout style="@style/item_details_header_layout">
+                <TextView
+                    style="@style/item_details_header"
+                    android:text="@string/deadline"/>
+                <ImageButton
+                    style="@style/item_details_button"
+                    android:id="@+id/item_details_deadline_image_button"
+                    android:src="@drawable/edit"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/item_details_field"
+                android:id="@+id/item_details_deadline_text_view"
+                android:text="@string/not_set"/>
+            <!--/Deadline!-->
+
+            <!--Description!-->
+            <LinearLayout style="@style/item_details_header_layout">
+                <TextView
+                    style="@style/item_details_header"
+                    android:text="@string/description"/>
+                <ImageButton
+                    style="@style/item_details_button"
+                    android:id="@+id/item_details_description_image_button"
+                    android:src="@drawable/edit"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/item_details_field"
+                android:id="@+id/item_details_description_text_view"
+                android:text="@string/not_set"/>
+            <EditText
+                style="@style/item_details_field"
+                android:id="@+id/item_details_description_edit_text"
+                android:visibility="gone"/>
+            <!--/Description!-->
+
+            <!--Photo!-->
+            <LinearLayout style="@style/item_details_header_layout">
+                <TextView
+                    style="@style/item_details_header"
+                    android:text="@string/photo"/>
+                <ImageButton
+                    style="@style/item_details_button"
+                    android:id="@+id/item_details_photo_image_button"
+                    android:src="@drawable/photo"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/item_details_photo_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@color/itemBackGround"
+                android:layout_gravity="top"
+                />
+            <!--/Photo!-->
+
+            <!--Action buttons!-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+                <ImageButton
+                    style="@style/item_details_action_button"
+                    android:id="@+id/item_details_action_back"
+                    android:src="@drawable/back"/>
+                <ImageButton
+                    style="@style/item_details_action_button"
+                    android:id="@+id/item_details_action_delete"
+                    android:src="@drawable/delete"/>
+                <ImageButton
+                    style="@style/item_details_action_button"
+                    android:id="@+id/item_details_action_share"
+                    android:src="@drawable/share"/>
+            </LinearLayout>
+            <!--/Action buttons!-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

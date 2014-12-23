@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Appearance" >
+        <!--<ListPreference
+            android:title="Item background color"
+            android:summary="Select the background color for list items"
+            android:key="prefs_bgColor"
+            android:defaultValue="#ffffff"
+            android:entries="@array/colorArray"
+            android:entryValues="@array/colorValues"/>!-->
+        <!--<ListPreference
+            android:title="App background color"
+            android:summary="Select the background color for the app screen"
+            android:key="prefs_appBgColor"
+            android:defaultValue="#ffffff"
+            android:entries="@array/colorArray"
+            android:entryValues="@array/colorValues"/>!-->
+
+        <lv.tsi.romstr.todolist.ColorDialog
+            android:title="App background color"
+            android:summary="Select the background color for the app screen"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
